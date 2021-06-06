@@ -1,0 +1,149 @@
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+a{
+  color:black;
+  text-shadow:black;
+  
+}
+
+.App {
+  text-align: center;
+
+}
+.App-initial{
+  background-color:white;
+  min-height: 35vh;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-body {
+  background-color: white;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  
+}
+.App-body1 {
+  
+  display: inline;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  
+}
+.Botones{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+.App-img {
+  /* display: flex; */
+  width:100%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.headerUsuario{
+  background-color:white;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+} 
+
+.imgTop{
+   /* display: flex; */
+  
+}
+.Dialog{
+  background-color:grey;
+}
+.Barra1{
+  background-color:white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px;
+  /* border: 1px solid grey; */
+  /* border-radius: 10px; */
+}
+
+/* .BotonInicio {
+
+} */
+.FooterInitial{
+  display: flex;
+  /* flex-direction: bottom; */
+  align-items: bottom;
+  justify-content: center;
+  padding-top: 54px;
+  bottom: 0;
+  z-index: 1;
+  position: sticky;
+}
+.FooterTotal{
+  display: flex;
+  /* flex-direction: bottom; */
+  align-items: bottom;
+  justify-content: center;
+  padding-top: 70px;
+  bottom: 0;
+  z-index: 1;
+  position: sticky;
+}
+.App-visitante{
+  
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px;
+}
+.CaraNueva{
+  display: flex;
+  justify-content: center;
+  width: min-content;
+}
+
+.swiper-container {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  /* left: 50%;
+  top: 50%; */
+  /* margin-left: -150px; */
+  /* margin-top: -150px; */
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
