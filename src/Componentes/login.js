@@ -56,6 +56,11 @@ export default function FormDialog() {
           </Button>
         </DialogActions>
       </Dialog>
+      <br/>
+      <br/>
+      <Button variant="contained" color="primary" onClick={handleClickOpen}>
+      Registrate
+      </Button>
     </div>
   );
 }

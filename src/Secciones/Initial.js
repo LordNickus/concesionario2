@@ -20,16 +20,16 @@ const Initial = ()=>{
      <ThemeProvider theme={Style}>
     <div>
         <div className='Barra1'>
-            <img src="./redon2.png" width="290" height="150"/>
+            <img src="../redon2.png" width="290" height="150"/>
         </div>
         <div className='App-initial'>
         <FormDialog />
         <br/>
-        <Button variant="contained" color="primary"> {<Link to='/Secciones/Visitante'>Registrate</Link>}</Button>
+        
         
         </div>
         <div className='FooterInitial'>
-             <img src="./logoDA.jpeg" width="125" height="25"/>
+             <img src="../logoDA.jpeg" width="125" height="25"/>
         </div>
     </div>
     </ThemeProvider>
