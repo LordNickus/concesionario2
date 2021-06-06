@@ -5,7 +5,8 @@ import {
   Switch, 
   } from 'react-router-dom';
 import Initial from './Secciones/Initial';
-import Usuario from './Secciones/Usuario'
+import Usuario from './Secciones/Usuario';
+import SearchResult from './Secciones/SearchResult';
 import {createMuiTheme,ThemeProvider} from '@material-ui/core/styles';
 
 const Style = createMuiTheme({
@@ -54,6 +55,9 @@ function App() {
           </Route>
 
           */}
+          <Route path="/Secciones/SearchResult">
+              <SearchResult />    
+          </Route>
          <Route path="/Secciones/Usuario">
               <Usuario />
           </Route>

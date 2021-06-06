@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function NativeSelects() {
+export default function ResultSelects() {
   const classes = useStyles();
   const [state, setState] = React.useState({
     marca: '',
@@ -40,7 +40,7 @@ export default function NativeSelects() {
     <div className="Botones">
       <div >
         <FormControl variant="outlined" className={classes.formControl}>
-        <InputLabel htmlFor="outlined-marca-native-simple">Marca</InputLabel>
+        <InputLabel htmlFor="outlined-marca-native-simple">Precio</InputLabel>
         <Select
           native
           value={state.marca}
@@ -62,7 +62,7 @@ export default function NativeSelects() {
       </FormControl>
      
       <FormControl variant="outlined" className={classes.formControl}>
-        <InputLabel htmlFor="outlined-modelo-native-simple">Modelo</InputLabel>
+        <InputLabel htmlFor="outlined-modelo-native-simple">Financiacion</InputLabel>
         <Select
           native
           value={state.modelo}
@@ -84,7 +84,7 @@ export default function NativeSelects() {
       </FormControl>
       
       <FormControl variant="outlined" className={classes.formControl}>
-        <InputLabel htmlFor="outlined-version-native-simple">Version</InputLabel>
+        <InputLabel htmlFor="outlined-version-native-simple">Reventa</InputLabel>
         <Select
           native
           value={state.version}
@@ -104,7 +104,7 @@ export default function NativeSelects() {
       </FormControl>
             
       <FormControl variant="outlined" className={classes.formControl}>
-        <InputLabel htmlFor="outlined-año-native-simple">Año</InputLabel>
+        <InputLabel htmlFor="outlined-año-native-simple">Peritaje</InputLabel>
         <Select
           native
           value={state.año}
@@ -123,31 +123,8 @@ export default function NativeSelects() {
         </Select>
       </FormControl>
       
-      <FormControl variant="outlined" className={classes.formControl}>
-        <InputLabel htmlFor="outlined-kilometraje-native-simple">Kilometraje</InputLabel>
-        <Select
-          native
-          value={state.kilometraje}
-          onChange={handleChange}
-          label="Kilometraje"
-          inputProps={{
-            name: 'kilometraje',
-            id: 'outlined-kilometraje-native-simple',
-          }}
-        >
-          <option aria-label="None" value="" />
-          <option value={10}>Hasta 50.000 Km</option>
-          <option value={20}>Desde 50.000 Km Hasta 80.000 Km</option>
-          <option value={30}>Desde 80.000 Km Hasta 100.000 Km</option>
-          <option value={30}>Desde 100.000 Km Hasta 150.000 Km</option>
-        </Select>
-      </FormControl>
       </div>
-      <div >
-      <Button variant="contained" color='secondary'>
-          {<Link to='/Secciones/SearchResult'>Buscar</Link>}
-        </Button>
-      </div>
+      
     </div>
   );
 }
